@@ -13,5 +13,10 @@ export class RecipeListComponent {
       'A test recipe',
       'https://www.foodrepublic.com/img/gallery/the-20-wildest-weirdest-and-most-delicious-recipes-of-the-year/intro-1684945452.jpg'
     ),
+    new Recipe(
+      'Test recipe',
+      'A test recipe',
+      'https://www.foodrepublic.com/img/gallery/the-20-wildest-weirdest-and-most-delicious-recipes-of-the-year/intro-1684945452.jpg'
+    ),
   ];
 }

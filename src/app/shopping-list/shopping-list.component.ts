@@ -9,6 +9,6 @@ import { Ingredient } from '../shared/ingredient.model';
 export class ShoppingListComponent {
   ingredients: Ingredient[] = [
     new Ingredient('Apple', 5),
-    new Ingredient('Tomato', 5),
+    new Ingredient('Tomato', 10),
   ];
 }
