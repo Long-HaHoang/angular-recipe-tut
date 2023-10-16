@@ -1,9 +1,20 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
+import { Ingredient } from '../shared/ingredient.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class ShoppingListService {
+export class ShoppingListService implements OnInit {
+  private ingredients: Ingredient[] = [
+    new Ingredient('Apple', 5),
+    new Ingredient('Tomato', 10),
+  ];
 
-  constructor() { }
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  getIngredients() {
+    return this.ingredients.slice();
+  }
 }
