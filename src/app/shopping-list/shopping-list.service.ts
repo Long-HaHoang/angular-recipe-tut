@@ -23,4 +23,15 @@ export class ShoppingListService implements OnInit {
     this.ingredients.push(ingredient);
     this.ingriedientsChanged.emit(this.ingredients.slice());
   }
+
+  addIngredients(ingredients: Ingredient[]) {
+    // too many events
+    // for (let ingredient of ingredients) {
+    //   this.addIngredient(ingredient);
+    // }
+
+    // using the spread operator instead, too save event fire
+    this.ingredients.push(...ingredients);
+    this.ingriedientsChanged.emit(this.ingredients.slice());
+  }
 }
